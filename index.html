@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hotel Brasil · Humaitá - AM</title>
+<meta name="description" content="Hotel no Centro de Humaitá (AM), na Rua 5 de Setembro. Apartamentos para casal e solteiro, quartos completos com internet, café da manhã e recepção 24 horas. Reserve pelo WhatsApp.">
+<meta name="theme-color" content="#0D2152">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hotel Brasil · Humaitá - AM">
+<meta property="og:description" content="Hospedagem com conforto no Centro de Humaitá. Recepção 24 horas. Reserve pelo WhatsApp.">
+<meta property="og:image" content="https://hotelbrasilhumaita.com.br/og.jpg">
+<meta property="og:url" content="https://hotelbrasilhumaita.com.br/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23F3F5FA' stroke='%230D2152' stroke-width='5'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-weight='700' font-size='32' text-anchor='middle' fill='%230D2152'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@600;700&family=Great+Vibes&family=Nunito:wght@500;600;700;800&display=swap">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<style>
+:root{--esc:#0D2152;--claro:#F3F5FA;--ac:#1C45A6;--ouro:#D7262E;--verm-claro:#FF6B70;--wa:#1f9d4c;--txt:#2a211b;--suave:#5c5047}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--claro);font-family:'Nunito',system-ui,sans-serif;color:var(--txt);font-size:17px;line-height:1.5;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+svg.lucide{width:1em;height:1em;stroke-width:1.8;flex:none}
+.cx{max-width:1240px;margin:0 auto;padding:0 16px}
+section{scroll-margin-top:16px}
+
+/* topo */
+.topo{position:relative;z-index:20;background:var(--esc);border-bottom:3px solid var(--ouro);color:#f4ece2}
+.topo .cx{position:relative;display:flex;align-items:center;gap:24px;height:62px}
+.nav{display:none;gap:30px;font-weight:600;font-size:16px}
+.nav a{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:3px solid transparent}
+.nav a svg{font-size:19px}
+.nav a:hover,.nav a.on{color:#fff}.nav a.on{border-color:var(--ouro)}
+.bt-wa{margin-left:auto;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 16px;border-radius:24px;background:var(--wa);border:2px solid #7ee3a2;color:#fff;font-weight:800;font-size:15px;white-space:nowrap}
+.bt-wa svg{width:20px;height:20px}
+
+/* selo redondo com o nome, pendurado no topo como no modelo */
+.logo{--lg:96px;position:absolute;left:16px;top:6px;width:var(--lg);height:var(--lg);font-size:calc(var(--lg) / 5.6);border-radius:50%;background:var(--claro);border:.17em solid var(--esc);box-shadow:0 0 0 3px var(--ouro),0 8px 24px rgba(0,0,0,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:30}
+.logo svg.arco{position:absolute;inset:0;width:100%;height:100%}
+.logo .ic{font-size:.85em;color:var(--ac);display:flex}
+.logo .nm{font-family:'Playfair Display',serif;font-weight:900;color:var(--esc);line-height:1.1;font-size:1em}
+
+/* hero */
+.hero{position:relative;z-index:1;background:var(--esc);overflow:hidden;display:grid;place-items:center;padding:96px 16px 76px;min-height:440px}
+.hero .f1{position:absolute;inset:0;background:url(fotos/hero.jpg) center/cover}
+.hero .f1:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,33,82,.62),rgba(13,33,82,.42) 50%,rgba(13,33,82,.62))}
+.hero .borda,.hero .f2,.selo{display:none}
+.faixa{position:relative;z-index:2;width:min(600px,100%);padding:20px 26px 12px;text-align:center;background:linear-gradient(180deg,#1F4FB8,#15347F);border:4px solid var(--ouro);border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.45),inset 0 0 0 2px rgba(255,255,255,.18);font-weight:400}
+.faixa:before,.faixa:after{content:'';position:absolute;top:50%;width:22px;height:22px;background:var(--ouro);transform:translateY(-50%) rotate(45deg)}
+.faixa:before{left:-13px}.faixa:after{right:-13px}
+.faixa .l1{display:block;font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(30px,8.6vw,50px);line-height:1;letter-spacing:.02em;color:var(--ouro);-webkit-text-stroke:5px #fff;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.3)}
+.faixa .l2{font-family:'Lora',serif;font-weight:700;color:#fff;font-size:clamp(17px,4.6vw,24px);margin:8px 0 0;display:flex;align-items:center;justify-content:center;gap:12px}
+.faixa .l2:before,.faixa .l2:after{content:'';width:30px;height:2px;background:#fff}
+.faixa .l3{display:block;font-family:'Great Vibes',cursive;color:#fff;font-size:clamp(56px,16vw,84px);line-height:1.15;text-shadow:0 3px 0 rgba(0,0,0,.35)}
+.hero .sub{position:relative;z-index:2;margin-top:16px;color:#fff;font-weight:700;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,.6);display:flex;align-items:center;gap:8px}
+.hero .sub svg{color:var(--verm-claro)}
+
+/* destaques */
+.dest{position:relative;z-index:4;margin-top:-44px}
+.dest ul{list-style:none;background:#fff;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.12);border:1px solid rgba(0,0,0,.06);display:grid;grid-template-columns:1fr 1fr}
+.dest li{display:flex;align-items:center;gap:12px;padding:14px 12px;border-color:#dde3f0}
+.dest li:nth-child(odd){border-right:2px solid #dde3f0}
+.dest li:nth-child(-n+2){border-bottom:2px solid #dde3f0}
+.dest li svg{font-size:32px;color:var(--ac)}
+.dest b{display:block;font-size:15.5px;font-weight:800;color:var(--esc);line-height:1.25}
+.dest small{font-size:13.5px;color:#6b5f55;line-height:1.3;display:block}
+
+/* corpo */
+.corpo{display:grid;gap:22px;padding:34px 16px 10px;grid-template-areas:"est" "sobre" "lado"}
+.sobre{grid-area:sobre;position:relative;overflow:hidden;border-radius:16px;background:var(--esc);color:#f6eee4;padding:30px 26px;text-align:center}
+.sobre h2{font-family:'Lora',serif;font-size:27px;line-height:1.15;font-weight:600}
+.sobre .onde{color:var(--verm-claro);font-weight:700;font-size:16px;margin:10px 0 14px}
+.sobre p{font-size:15.5px;line-height:1.45;text-align:left;color:#e9dfd3}
+.sobre .bt{margin:20px auto 0;max-width:240px;height:44px;border:1.5px solid var(--ouro);border-radius:10px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:16px}
+.sobre .bt:hover{background:rgba(215,38,46,.15)}
+.sobre .folha{position:absolute;left:-16px;top:-8px;font-size:66px;color:rgba(215,38,46,.45);transform:rotate(-30deg)}
+.est{grid-area:est}
+.tit{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;margin-bottom:16px}
+.tit svg{font-size:28px;color:var(--ac)}
+.tit h2{font-family:'Lora',serif;font-size:29px;font-weight:700;color:var(--esc)}
+.tit .sub{border-left:2px solid #cfc3b6;padding-left:14px;font-size:15px;color:var(--suave)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.tile{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.tile:last-child{grid-column:1/-1}
+.tile img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tile:last-child img{aspect-ratio:16/7}
+.tile .lb{height:48px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;font-size:15.5px;color:var(--esc);white-space:nowrap}
+.tile .lb svg{font-size:20px;color:var(--ac)}
+.cta{margin:22px auto 0;max-width:510px;min-height:58px;padding:0 56px 0 24px;border-radius:30px;background:linear-gradient(180deg,#1F4FB8,#15347F);color:#fff;font-family:'Lora',serif;font-weight:700;font-size:clamp(18px,5vw,23px);display:flex;align-items:center;justify-content:center;gap:14px;box-shadow:0 8px 20px rgba(0,0,0,.25);position:relative}
+.cta:hover{filter:brightness(1.12)}
+.cta .ic1{font-size:26px}
+.cta .ic2{position:absolute;right:16px;font-size:28px}
+.lado{grid-area:lado;display:flex;flex-direction:column;gap:14px}
+.lado>a,.lado>div{background:#fff;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.1);padding:16px 18px;display:flex;align-items:center;gap:16px;border:1px solid rgba(0,0,0,.05)}
+.lado a:hover{box-shadow:0 6px 18px rgba(0,0,0,.16)}
+.lado .gi{width:34px;height:34px;font-size:34px;flex:none;color:var(--ac)}
+.lado b{font-size:16px;font-weight:800;color:var(--esc);display:block;line-height:1.25}
+.lado span{font-size:15px;color:#4a3f37;line-height:1.35;display:block}
+.lado .chev{margin-left:auto;font-size:20px;color:var(--esc)}
+
+/* fotos do hotel: cada .vaga vira <img> quando chegarem as fotos do Miltom */
+.fotos{padding:34px 16px 10px}
+.grade{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.grade>*{border-radius:12px;overflow:hidden;aspect-ratio:4/3;width:100%}
+.grade img{object-fit:cover;height:100%;box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.vaga{border:2px dashed var(--ouro);background:rgba(215,38,46,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#1C45A6;font-weight:700;font-size:14px;text-align:center;padding:10px}
+.vaga svg{font-size:30px}
+
+/* localização */
+.local{padding:34px 16px 40px}
+.local .caixa{display:grid;gap:16px;background:#fff;border-radius:16px;box-shadow:0 4px 14px rgba(0,0,0,.1);overflow:hidden}
+.local iframe{display:block;width:100%;height:300px;border:0;background:#e8ebe4}
+.local .info{padding:4px 22px 24px;display:grid;gap:10px;align-content:center}
+.local .info p{display:flex;gap:10px;align-items:flex-start;color:#4a3f37}
+.local .info p svg{font-size:22px;color:var(--ac);margin-top:2px}
+.local .info a.bt{margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;border-radius:24px;border:2px solid var(--ac);color:var(--ac);font-weight:800}
+.local .info a.bt:hover{background:var(--ac);color:#fff}
+
+/* rodapé */
+.rodape{position:relative;background:var(--esc);border-top:3px solid var(--ouro);color:#e9dfd3;text-align:center;padding:34px 16px 96px;font-size:15px}
+.rodape .estrela{position:absolute;left:50%;top:-3px;transform:translateX(-50%);font-size:30px;color:var(--ouro);background:var(--claro);width:60px;height:34px;display:flex;justify-content:center;border-radius:0 0 30px 30px}
+.rodape strong{display:block;font-family:'Playfair Display',serif;font-weight:900;font-size:24px;color:#fff;margin:6px 0 4px}
+.rodape a{color:var(--verm-claro);font-weight:700}
+.rodape small{display:block;margin-top:16px;color:#a9b5ad;font-size:13px}
+.flutua{position:fixed;right:16px;bottom:16px;width:62px;height:62px;border-radius:50%;background:#25D366;box-shadow:0 8px 22px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;z-index:40}
+.flutua svg{width:38px;height:38px}
+h2,.vaga{scroll-margin-top:16px}
+a:focus-visible{outline:3px solid var(--ouro);outline-offset:3px}
+
+@media(min-width:640px){
+  .dest ul{grid-template-columns:repeat(4,1fr)}
+  .dest li{padding:18px 20px;border:0!important;border-right:2px solid #dde3f0!important}
+  .dest li:last-child{border-right:0!important}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+  .tile:last-child{grid-column:auto}.tile:last-child img{aspect-ratio:4/3}
+  .grade{grid-template-columns:repeat(3,1fr)}
+  .local .caixa{grid-template-columns:3fr 2fr}
+  .local iframe{height:100%;min-height:340px}
+  .local .info{padding:24px 26px}
+  .bt-wa .txt-curto{display:none}
+}
+@media(max-width:639px){.bt-wa .txt-longo{display:none}}
+@media(max-width:820px){.dest li svg{font-size:28px}.dest b{font-size:14.5px}}
+@media(min-width:1000px){
+  .topo .cx{height:74px;padding-left:330px}
+  .nav{display:flex}
+  .logo{--lg:224px;left:60px;top:8px}
+  .hero{min-height:440px;padding:56px 16px 90px;justify-items:start}
+  .hero .f1{right:32%}
+  .hero .borda{display:block;position:absolute;right:0;top:0;bottom:0;width:40.5%;clip-path:ellipse(100% 120% at 100% 50%);background:var(--ouro)}
+  .hero .f2{display:block;position:absolute;right:0;top:0;bottom:0;width:39.5%;background:url(fotos/entrada.jpg) 60% center/cover;clip-path:ellipse(100% 120% at 100% 50%)}
+  .hero .faixa,.hero .sub{margin-left:max(24%,calc(50% - 390px))}
+  .hero .sub{width:min(600px,100%);justify-content:center}
+  .selo{position:absolute;right:max(40px,calc(50% - 580px));top:26px;width:150px;height:150px;border-radius:50%;background:var(--claro);border:3px solid var(--ouro);box-shadow:0 8px 22px rgba(0,0,0,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:3}
+  .selo b{font-family:'Lora',serif;font-size:22px;color:var(--esc);font-weight:600}
+  .selo em{font-family:'Lora',serif;font-style:italic;font-weight:700;font-size:28px;color:var(--ac);line-height:1.05}
+  .selo svg{color:var(--esc);font-size:16px;margin-top:4px}
+  .dest{margin-top:-40px}
+  .corpo{max-width:1520px;grid-template-columns:290px 1fr 290px;grid-template-areas:"sobre est lado";gap:28px;align-items:start}
+  .sobre{padding:34px 30px}
+  .tile img{aspect-ratio:auto;height:150px}.tile:last-child img{height:150px}
+}
+@media(min-width:1360px){
+  .tiles{grid-template-columns:repeat(5,1fr)}
+  .tile .lb{font-size:14.5px;gap:6px}.tile .lb svg{font-size:18px}
+  .tile img,.tile:last-child img{height:160px}
+  .lado{padding-top:2px}
+  .rodape{padding-bottom:40px}
+  .grade>*{aspect-ratio:16/10}
+  .flutua{right:28px;bottom:24px;width:70px;height:70px}
+  .flutua svg{width:44px;height:44px}
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="cx">
+    <a class="logo" href="#inicio" aria-label="Hotel Brasil, início">
+      <svg class="arco" viewBox="0 0 210 210" aria-hidden="true"><defs><path id="a1" d="M 30 105 A 75 75 0 0 1 180 105"/><path id="a2" d="M 34 112 A 71 71 0 0 0 176 112"/></defs>
+        <text font-family="Lora,serif" font-weight="700" font-size="13" fill="#0D2152" letter-spacing="1.5"><textPath href="#a1" startOffset="50%" text-anchor="middle">HOTEL</textPath></text>
+        <text font-family="Lora,serif" font-weight="700" font-size="12" fill="#0D2152" letter-spacing="1"><textPath href="#a2" startOffset="50%" text-anchor="middle">Humaitá · AM</textPath></text></svg>
+      <span class="ic"><i data-lucide="bed-double"></i></span>
+      <span class="nm">Brasil</span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#inicio" class="on"><i data-lucide="house"></i>Início</a>
+      <a href="#estrutura"><i data-lucide="bed-double"></i>Quartos</a>
+      <a href="#fotos"><i data-lucide="image"></i>Fotos</a>
+      <a href="#localizacao"><i data-lucide="map-pin"></i>Localização</a>
+      <a href="#sobre"><i data-lucide="info"></i>Sobre</a>
+    </nav>
+    <a class="bt-wa" href="https://wa.me/5597981218142?text=Oi%21%20Vi%20o%20site%20do%20Hotel%20Brasil%20e%20quero%20fazer%20uma%20reserva." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.3-1.96 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2.01.89 2.16.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.5-.14.14-.29.3-.13.58.17.29.74 1.22 1.58 1.97 1.09.97 2 1.27 2.29 1.42.29.14.46.12.62-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg>
+      <span class="txt-longo">Chamar no WhatsApp</span><span class="txt-curto">Reservar</span>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Apresentação">
+    <div class="f1" role="img" aria-label="Hotel Brasil"></div><div class="borda"></div><div class="f2"></div>
+    <h1 class="faixa"><span class="l1">HOSPEDAGEM</span><span class="l2">com conforto em</span><span class="l3">Humaitá</span></h1>
+    <p class="sub"><i data-lucide="map-pin"></i>No Centro de Humaitá, perto de tudo</p>
+    <div class="selo" aria-hidden="true"><b>Descanso</b><em>garantido.</em><i data-lucide="sparkle"></i></div>
+  </section>
+
+  <div class="cx dest">
+    <ul>
+      <li><i data-lucide="bed-double"></i><p><b>Apartamentos</b><small>Para casal e solteiro</small></p></li>
+      <li><i data-lucide="wifi"></i><p><b>Internet</b><small>Quartos completos</small></p></li>
+      <li><i data-lucide="coffee"></i><p><b>Café da Manhã</b><small>Pra começar bem o dia</small></p></li>
+      <li><i data-lucide="car"></i><p><b>Estacionamento</b><small>Carro e moto na frente</small></p></li>
+    </ul>
+  </div>
+
+  <div class="cx corpo">
+    <section class="sobre" id="sobre">
+      <i data-lucide="leaf" class="folha"></i>
+      <h2>Conforto e<br>boa acolhida</h2>
+      <div class="onde">Centro de Humaitá · AM</div>
+      <p>O Hotel Brasil fica na Rua 5 de Setembro, no Centro de Humaitá, perto de tudo. Recebe quem está a trabalho ou a passeio com apartamentos para casal e solteiro, quartos completos com internet, café da manhã e recepção aberta 24 horas.</p>
+      <a class="bt" href="https://wa.me/5597981218142?text=Oi%21%20Vi%20o%20site%20do%20Hotel%20Brasil%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Falar com a recepção <i data-lucide="chevron-right"></i></a>
+    </section>
+
+    <section class="est" id="estrutura">
+      <div class="tit"><i data-lucide="bed-double"></i><h2>Nossa Estrutura</h2><span class="sub">Conforto pra sua estadia</span></div>
+      <div class="tiles">
+        <div class="tile"><img src="fotos/quarto.jpg" alt="Apartamento do hotel" loading="lazy"><div class="lb"><i data-lucide="bed-double"></i>Quartos</div></div>
+        <div class="tile"><img src="fotos/cafe.jpg" alt="Café da manhã" loading="lazy"><div class="lb"><i data-lucide="coffee"></i>Café da manhã</div></div>
+        <div class="tile"><img src="fotos/recepcao.jpg" alt="Recepção" loading="lazy"><div class="lb"><i data-lucide="concierge-bell"></i>Recepção</div></div>
+        <div class="tile"><img src="fotos/banheiro.jpg" alt="Banheiro do apartamento" loading="lazy"><div class="lb"><i data-lucide="shower-head"></i>Banheiro</div></div>
+        <div class="tile"><img src="fotos/estacionamento.jpg" alt="Motos estacionadas na frente do hotel" loading="lazy"><div class="lb"><i data-lucide="car"></i>Estacionamento</div></div>
+      </div>
+      <a class="cta" href="https://wa.me/5597981218142?text=Oi%21%20Vi%20o%20site%20do%20Hotel%20Brasil%20e%20quero%20fazer%20uma%20reserva." target="_blank" rel="noopener"><i data-lucide="calendar-check" class="ic1"></i>Reservar pelo WhatsApp<i data-lucide="circle-chevron-right" class="ic2"></i></a>
+    </section>
+
+    <aside class="lado">
+      <a href="#localizacao"><svg class="gi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.6" fill="#fff"/><path d="M12 2c3.9 0 7 3.1 7 7" stroke="#4285F4" stroke-width="2.4" fill="none"/><path d="M5 9c0-2 .8-3.8 2.2-5.1" stroke="#FBBC05" stroke-width="2.4" fill="none"/></svg><p><b>Como Chegar</b><span>Rua 5 de Setembro, 1683 · Centro</span></p><i data-lucide="chevron-right" class="chev"></i></a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20Brasil%20Rua%205%20de%20Setembro%201683%20Humait%C3%A1%20AM" target="_blank" rel="noopener"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><p><b>Avaliações no Google</b><span>Veja o que dizem os hóspedes</span></p><i data-lucide="chevron-right" class="chev"></i></a>
+      <div><i data-lucide="clock" class="gi"></i><p><b>Recepção 24 horas</b><span>Chegou tarde? A gente recebe.</span></p></div>
+    </aside>
+  </div>
+
+  <section class="cx fotos" id="fotos">
+    <div class="tit"><i data-lucide="image"></i><h2>Fotos do Hotel</h2><span class="sub">Conheça antes de chegar</span></div>
+    <div class="grade">
+      <img src="fotos/fachada.jpg" alt="Fachada do Hotel Brasil na Rua 5 de Setembro" loading="lazy">
+      <img src="fotos/placa.jpg" alt="Placa do Hotel Brasil na entrada" loading="lazy" style="object-position:center 12%">
+      <div class="vaga"><i data-lucide="camera"></i>recepção</div>
+      <div class="vaga"><i data-lucide="camera"></i>apartamento de casal</div>
+      <div class="vaga"><i data-lucide="camera"></i>apartamento de solteiro</div>
+      <div class="vaga"><i data-lucide="camera"></i>café da manhã</div>
+    </div>
+  </section>
+
+  <section class="cx local" id="localizacao">
+    <div class="tit"><i data-lucide="map-pin"></i><h2>Localização</h2><span class="sub">No Centro, perto de tudo</span></div>
+    <div class="caixa">
+      <iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sRua+5+de+Setembro,+1683,+Centro,+Humait%C3%A1+-+AM!6i16" loading="lazy" title="Mapa do Hotel Brasil" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="info">
+        <p><i data-lucide="map-pin"></i><span><b>Rua 5 de Setembro, 1683</b><br>Centro · Humaitá - AM</span></p>
+        <p><i data-lucide="clock"></i><span>Recepção 24 horas</span></p>
+        <p><i data-lucide="phone"></i><span>(97) 98121-8142 · WhatsApp</span></p>
+        <a class="bt" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%205%20de%20Setembro%201683%20Humait%C3%A1%20AM" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Traçar rota</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <span class="estrela"><i data-lucide="star"></i></span>
+  <strong>Hotel Brasil</strong>
+  Rua 5 de Setembro, 1683 · Centro · Humaitá - AM<br>
+  Reservas: <a href="https://wa.me/5597981218142?text=Oi%21%20Vi%20o%20site%20do%20Hotel%20Brasil%20e%20quero%20fazer%20uma%20reserva." target="_blank" rel="noopener">(97) 98121-8142</a>
+  <small>© <span id="ano">2026</span> Hotel Brasil</small>
+</footer>
+
+<a class="flutua" href="https://wa.me/5597981218142?text=Oi%21%20Vi%20o%20site%20do%20Hotel%20Brasil%20e%20quero%20fazer%20uma%20reserva." target="_blank" rel="noopener" aria-label="Reservar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.3-1.96 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2.01.89 2.16.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.5-.14.14-.29.3-.13.58.17.29.74 1.22 1.58 1.97 1.09.97 2 1.27 2.29 1.42.29.14.46.12.62-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg>
+</a>
+
+<script>
+addEventListener('DOMContentLoaded', function(){
+  if (window.lucide) lucide.createIcons();
+  document.getElementById('ano').textContent = new Date().getFullYear();
+});
+</script>
+</body>
+</html>
