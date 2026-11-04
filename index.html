@@ -3,14 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hotel Brasil · Humaitá - AM</title>
-<meta name="description" content="Hotel no Centro de Humaitá (AM), na Rua 5 de Setembro. Apartamentos para casal e solteiro, quartos completos com internet, café da manhã e recepção 24 horas. Reserve pelo WhatsApp.">
+<title>Hotel Brasil Humaitá - AM | Hotel no Centro, reservas pelo WhatsApp</title>
+<meta name="description" content="Site oficial do Hotel Brasil em Humaitá (AM), na Rua 5 de Setembro, 1683. Apartamentos para casal e solteiro, quartos completos com internet, café da manhã e recepção 24 horas. Reserve pelo WhatsApp.">
 <meta name="theme-color" content="#0D2152">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hotel Brasil · Humaitá - AM">
 <meta property="og:description" content="Hospedagem com conforto no Centro de Humaitá. Recepção 24 horas. Reserve pelo WhatsApp.">
-<meta property="og:image" content="https://hotelbrasilhumaita.com.br/og.jpg">
-<meta property="og:url" content="https://hotelbrasilhumaita.com.br/">
+<meta property="og:image" content="https://site48hrs.github.io/hotelbrasilhumaita/og.jpg">
+<meta property="og:url" content="https://site48hrs.github.io/hotelbrasilhumaita/">
+<meta property="og:site_name" content="Hotel Brasil">
+<meta property="og:locale" content="pt_BR">
+<link rel="canonical" href="https://site48hrs.github.io/hotelbrasilhumaita/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Hotel", "name": "Hotel Brasil", "url": "https://site48hrs.github.io/hotelbrasilhumaita/", "description": "Hotel no Centro de Humaitá (AM): apartamentos para casal e solteiro, quartos completos com internet, café da manhã, estacionamento e recepção 24 horas.", "telephone": "+55 97 98121-8142", "image": ["https://site48hrs.github.io/hotelbrasilhumaita/og.jpg", "https://site48hrs.github.io/hotelbrasilhumaita/fotos/fachada.jpg", "https://site48hrs.github.io/hotelbrasilhumaita/fotos/quarto.jpg", "https://site48hrs.github.io/hotelbrasilhumaita/fotos/casal.jpg", "https://site48hrs.github.io/hotelbrasilhumaita/fotos/solteiro.jpg"], "address": {"@type": "PostalAddress", "streetAddress": "Rua 5 de Setembro, 1683", "addressLocality": "Humaitá", "addressRegion": "AM", "postalCode": "69800-000", "addressCountry": "BR"}, "geo": {"@type": "GeoCoordinates", "latitude": -7.5174927, "longitude": -63.0298406}, "hasMap": "https://maps.google.com/?cid=9188643133157991086", "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Internet", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Café da manhã", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Estacionamento", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Recepção 24 horas", "value": true}]}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23F3F5FA' stroke='%230D2152' stroke-width='5'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-weight='700' font-size='32' text-anchor='middle' fill='%230D2152'%3EB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@600;700&family=Great+Vibes&family=Nunito:wght@500;600;700;800&display=swap">
@@ -127,6 +131,7 @@ section{scroll-margin-top:16px}
 .flutua{position:fixed;right:16px;bottom:16px;width:62px;height:62px;border-radius:50%;background:#25D366;box-shadow:0 8px 22px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;z-index:40}
 .flutua svg{width:38px;height:38px}
 h2,.vaga{scroll-margin-top:16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 a:focus-visible{outline:3px solid var(--ouro);outline-offset:3px}
 
 @media(min-width:640px){
@@ -202,7 +207,7 @@ a:focus-visible{outline:3px solid var(--ouro);outline-offset:3px}
 <main id="inicio">
   <section class="hero" aria-label="Apresentação">
     <div class="f1" role="img" aria-label="Hotel Brasil"></div><div class="borda"></div><div class="f2"></div>
-    <h1 class="faixa"><span class="l1">HOSPEDAGEM</span><span class="l2">com conforto em</span><span class="l3">Humaitá</span></h1>
+    <h1 class="faixa"><span class="sr">Hotel Brasil: </span><span class="l1">HOSPEDAGEM</span><span class="l2">com conforto em</span><span class="l3">Humaitá</span></h1>
     <p class="sub"><i data-lucide="map-pin"></i>No Centro de Humaitá, perto de tudo</p>
     <div class="selo" aria-hidden="true"><b>Descanso</b><em>garantido.</em><i data-lucide="sparkle"></i></div>
   </section>
@@ -239,7 +244,7 @@ a:focus-visible{outline:3px solid var(--ouro);outline-offset:3px}
 
     <aside class="lado">
       <a href="#localizacao"><svg class="gi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.6" fill="#fff"/><path d="M12 2c3.9 0 7 3.1 7 7" stroke="#4285F4" stroke-width="2.4" fill="none"/><path d="M5 9c0-2 .8-3.8 2.2-5.1" stroke="#FBBC05" stroke-width="2.4" fill="none"/></svg><p><b>Como Chegar</b><span>Rua 5 de Setembro, 1683 · Centro</span></p><i data-lucide="chevron-right" class="chev"></i></a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20Brasil%20Rua%205%20de%20Setembro%201683%20Humait%C3%A1%20AM" target="_blank" rel="noopener"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><p><b>Avaliações no Google</b><span>Veja o que dizem os hóspedes</span></p><i data-lucide="chevron-right" class="chev"></i></a>
+      <a href="https://maps.google.com/?cid=9188643133157991086" target="_blank" rel="noopener"><svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><p><b>Avaliações no Google</b><span>Veja o que dizem os hóspedes</span></p><i data-lucide="chevron-right" class="chev"></i></a>
       <div><i data-lucide="clock" class="gi"></i><p><b>Recepção 24 horas</b><span>Chegou tarde? A gente recebe.</span></p></div>
     </aside>
   </div>
